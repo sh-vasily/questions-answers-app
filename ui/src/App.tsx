@@ -8,6 +8,7 @@ let App = ()=>
     <div className="App">
       <header className="App-header">
         <Header></Header>
+        <input placeholder='Вопрос'></input>
         {Array(10).fill(1).map((item, index) => `Вопрос № ${index+1}`).map(item => <Question text={item} key = {item}/>)}  
         <img src={logo} className="App-logo" alt="logo" />
       </header>
